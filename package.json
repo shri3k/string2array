@@ -1,0 +1,34 @@
+{
+  "name": "stringray",
+  "version": "1.0.0",
+  "description": "String to Array with comma delimiter",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node tests/index"
+  },
+  "bin": {
+    "stringray": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sinkingshriek/stringray.git"
+  },
+  "keywords": [
+    "string",
+    "array",
+    "converstion"
+  ],
+  "author": "shriek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinkingshriek/stringray/issues"
+  },
+  "homepage": "https://github.com/sinkingshriek/stringray",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "defaults": "^1.0.2",
+    "lodash": "^3.9.3"
+  }
+}
