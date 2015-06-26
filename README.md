@@ -1,9 +1,9 @@
-# stringray
+# string2array
 ## Description
 A utility that converts given `string` in a comma delimited format and returns an `array`;
 
 ### Syntax:-
-`stringray(arg1)`
+`string2array(arg1)`
 
 #### Parameters:-
 **arg1**  
@@ -16,12 +16,12 @@ Aside from mentioned above, this utility is only used in special cases. _Often t
 ## Usage
 
 ```
-var stringray = require('stringray');
-console.log(stringray("hello,world,['nice','day'],{'good':'bye', 'world':['earth',9000]}")); // Gives you ["hello","world",['nice','day'],{'good':'bye', 'world':['earth',9000]}]
+var string2array = require('string2array');
+console.log(string2array("hello,world,['nice','day'],{'good':'bye', 'world':['earth',9000]}")); // Gives you ["hello","world",['nice','day'],{'good':'bye', 'world':['earth',9000]}]
 ```
 
 ## Global install
 Option is not available in global install.
 
 ### Usage
-`ubuntu$ stringray 'hello,world,["nice","day"],{"good":"bye", "world":["earth",9000]}';`
+`ubuntu$ string2array 'hello,world,["nice","day"],{"good":"bye", "world":["earth",9000]}';`

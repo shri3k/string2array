@@ -1,7 +1,7 @@
 var defaults = require('defaults');
 var assert = require('assert');
 var _ = require('lodash');
-var debug = require('debug')('stringray');
+var debug = require('debug')('string2array');
 var opts = {
   "start": ["[", "{"],
   "end": ["]", "}"]
