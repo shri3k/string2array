@@ -31,6 +31,8 @@ function hasEnd(matcher, string) {
 function init(input, options) {
   assert.equal(typeof input, 'string', 'should be string');
   if (Object.getPrototypeOf(this) != init.prototype) {
+    debug("Input given: ", input);
+    debug("Input type: ", typeof input);
     var obj = Object.create(init.prototype);
     obj.result = [];
     obj.tmp = '';
@@ -44,7 +46,7 @@ function init(input, options) {
       arg = arg.trim();
       var start = hasStart(_options, arg);
       if (start || !_.isEmpty(tmp)) {
-        debug('hasStart of ' + arg);
+        debug('hasStart or isNotEmpy ' + arg);
         var delimiter = "";
         if (!start) {
           delimiter = ",";
@@ -55,6 +57,7 @@ function init(input, options) {
         debug('hasEnd of ' + arg);
         var parse;
         try {
+          debug('parse', tmp);
           parse = JSON.parse(tmp);
         } catch (e) {
           debug("Failed parse value " + tmp);
